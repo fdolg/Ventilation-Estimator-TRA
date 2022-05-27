@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1003919687271-ddftbacp41ri274vpp75ul446k20cf4a.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1003919687271</string>
+    <string name="google_api_key" translatable="false">AIzaSyCOsoO1mtXXUu9M6KjNftn_faQUEd3-CWc</string>
+    <string name="google_app_id" translatable="false">1:1003919687271:android:edccd4894f6e7dc2529ec2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCOsoO1mtXXUu9M6KjNftn_faQUEd3-CWc</string>
+    <string name="google_storage_bucket" translatable="false">practica3intento.appspot.com</string>
+    <string name="project_id" translatable="false">practica3intento</string>
+</resources>
