@@ -13,7 +13,7 @@
         android:layout_width="373dp"
         android:layout_height="100dp"
         android:layout_marginTop="44dp"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="cursive"
         android:gravity="center"
         android:text="Configuración de parámetros"
         android:textColor="@color/white"
@@ -26,13 +26,12 @@
         android:id="@+id/btnMenu"
         android:layout_width="251dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="@color/color2"
         android:onClick="onClickComenzar"
         android:text="Comenzar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

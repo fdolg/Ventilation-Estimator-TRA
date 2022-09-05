@@ -14,13 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedidorCO2">
         <activity
+            android:name=".getEvalParametros"
+            android:exported="false" />
+        <activity
+            android:name=".MedicionCO2Ambiental"
+            android:exported="false" />
+        <activity
             android:name=".BorrarActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AcercaDe"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Consultas"
             android:exported="false"

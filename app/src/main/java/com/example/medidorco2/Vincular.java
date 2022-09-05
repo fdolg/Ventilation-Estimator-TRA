@@ -24,6 +24,7 @@ public class Vincular extends AppCompatActivity {
     private BluetoothAdapter BtAdaptador; //Adaptador para manejo de bluetooth
     private TextView txtvTitulo;
     private ArrayList<String> dispositivos;
+    private String mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,9 @@ public class Vincular extends AppCompatActivity {
         lstDispositivos = findViewById(R.id.lstdVinculados);
         txtvTitulo= findViewById(R.id.txtvTitulo);
         lstDispositivos.setOnItemClickListener(ItemClickLista);
+
+        Bundle bundleextras= getIntent().getExtras(); // Clase que permite recibir datos de activity previo
+        mode = bundleextras.getString(getResources().getString(R.string.str_mode)); // Recepción de dato
     }
 
     @Override
@@ -91,9 +95,19 @@ public class Vincular extends AppCompatActivity {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             String cadAux= dispositivos.get(i).toString();
             String [] cau2= cadAux.split("\n",2); // Se separa nombre y dirección MAC del dispositivo
-            Intent intentconfigPar = new Intent(getApplicationContext(),configParametros.class);
-            intentconfigPar.putExtra(getResources().getString(R.string.str_direccion_dispositivo),cau2[1]); // Se envío la dirección MAC al siguiente activity
-            startActivity(intentconfigPar);
+
+            if (mode.equals("lectura")){
+                Intent intentconfigPar = new Intent(getApplicationContext(),configParametros.class);
+                intentconfigPar.putExtra(getResources().getString(R.string.str_direccion_dispositivo),cau2[1]); // Se envío la dirección MAC al siguiente activity
+                startActivity(intentconfigPar);
+            }
+            if (mode.equals("estimador")){
+                Intent intentMedExt = new Intent(getApplicationContext(),MedicionCO2Ambiental.class);
+                intentMedExt.putExtra(getResources().getString(R.string.str_direccion_dispositivo),cau2[1]); // Se envío la dirección MAC al siguiente activity
+                startActivity(intentMedExt);
+            }
+
+
 
         }
     };

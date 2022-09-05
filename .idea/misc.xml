@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/drawable/fondo_degradado.xml" value="0.162" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_acerca_de.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_config_parametros.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_medicion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_medicion_co2_ambiental.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/Facultad de Ingenieria/10mo/Temas selectos de programacion Android/ProyectoFinal/MedidorC02-Consultas_comentado/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Documentos/Facultad de Ingenieria/Servicio Social/app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
         <entry key="..\:/Documentos/Facultad de Ingenieria/Servicio Social/app/app/src/main/res/drawable/custom_progress.xml" value="0.205" />
         <entry key="..\:/Documentos/Facultad de Ingenieria/Servicio Social/app/app/src/main/res/drawable/fondo_degradado.xml" value="0.205" />

@@ -3,4 +3,5 @@
     <string name="str_direccion_dispositivo">mac_address</string>
     <string name="str_concentracion_max">concentracion_max</string>
     <string name="str_tasa_max">tasa_max</string>
+    <string name="str_mode">mode</string>
 </resources>

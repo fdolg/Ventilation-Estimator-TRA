@@ -20,10 +20,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/textView4"
@@ -31,8 +31,10 @@
         android:layout_height="75dp"
         android:layout_marginBottom="384dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="Temas selectos de Programación"
-        android:textColor="@color/white"
+        android:text="Taller de Robótica Abierta"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

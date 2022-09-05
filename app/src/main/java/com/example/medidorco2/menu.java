@@ -10,6 +10,7 @@ import android.widget.Button;
 public class menu extends AppCompatActivity {
 
     private Button btnLectura;
+    String mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,9 @@ public class menu extends AppCompatActivity {
     }
     public void onClickLectura(View view) // Función asociada a activity Lectura
     {
+        mode="lectura";
         Intent intentVincular =new Intent(getApplicationContext(),Vincular.class);
+        intentVincular.putExtra(getResources().getString(R.string.str_mode),mode);
         startActivity(intentVincular);
     }
 
@@ -42,6 +45,11 @@ public class menu extends AppCompatActivity {
     }
 
 
+    public void onClickEstimador(View view) {
+        mode="estimador";
+        Intent intentVincular =new Intent(getApplicationContext(),Vincular.class);
+        intentVincular.putExtra(getResources().getString(R.string.str_mode),mode);
+        startActivity(intentVincular);
 
-
+    }
 }

@@ -44,7 +44,6 @@ public class Medicion extends AppCompatActivity {
     private TextView tvConcentracion;
     private TextView tvTasa;
     private TextView tvCalidad;
-    private TextView tvVentilacion;
     private int getValue;
     private TextView tvStatus;
     private byte[] mmBuffer = new byte[1024];
@@ -66,7 +65,6 @@ public class Medicion extends AppCompatActivity {
         tvConcentracion=findViewById(R.id.tvConcentracion);
         tvStatus=findViewById(R.id.tvStatus);
         tvCalidad=findViewById(R.id.tvCalidad);
-        tvVentilacion=findViewById(R.id.tvVentilacion);
         tvTasa=findViewById(R.id.tvTasa);
         pbConcentracion=findViewById(R.id.pbConcentracion);
         pbTasa=findViewById(R.id.pbTasa);
@@ -225,15 +223,6 @@ public class Medicion extends AppCompatActivity {
             tvCalidad.setTextColor(Color.RED);
         }
 
-        if (tasa<=Integer.parseInt(tasaMax)){ // Es menor o igual al límite establecido
-            tvVentilacion.setText("Adecuada");
-            tvVentilacion.setTextColor(Color.GREEN);
-        }
-        else
-        {
-            tvVentilacion.setText("Requerida");
-            tvVentilacion.setTextColor(Color.RED);
-        }
 
     }
 
