@@ -20,7 +20,9 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -64,6 +66,8 @@ public class ManejoDB {
         //se realiza la búsqueda en la base de datos con el siguiente query
         Query query = db.collection("lecturasCO2").whereEqualTo("email", usuario.email); // Hace búsqueda con email de la clase registro
         //si el query no es null realiza lo siguiente
+        query.orderBy("fecha");
+
         if (query!=null){
 
             query.get()
@@ -84,6 +88,9 @@ public class ManejoDB {
                                     registroID.add(document.getId());//se adquiere el ID de cada documento del query
                                     Log.w(TAG, "Llegaste a la busqueda");
                                 }
+
+                                Collections.sort(registros);
+
                                 //Adapta el contenido de la base de datos y luego llena el listView
                                 ArrayAdapter<String > adapter =new ArrayAdapter<>(context,android.R.layout.simple_list_item_1,registros);
                                 lstRegistros.setAdapter(adapter); // Se emplea el adaptador para visualizar registros
@@ -127,7 +134,11 @@ public class ManejoDB {
         CollectionReference lecturas=db.collection("lecturasCO2"); // Se señala la colección a usar
         Map<String,Object> data =new HashMap<>();
 
-        String fecha = new Date().toString();
+        String pattern = "MM-dd-yyyy HH:mm:ss";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String fecha = simpleDateFormat.format(new Date());
+
+      //  String fecha = new Date().toString();
         //Si los datos a registrar son correctos, entonces se suben los datos a la base
         if(fecha.equals("")==false && concentracion.equals("")==false && tasa.equals("")==false){ // Verificación de datos
             data.put("email", usuario.email);

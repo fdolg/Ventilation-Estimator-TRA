@@ -12,6 +12,8 @@ import java.util.Map;
 public class usuario {
 
     public static String email;
+    public static String BTdir;
+    public static float ppmext;
 
 
 }

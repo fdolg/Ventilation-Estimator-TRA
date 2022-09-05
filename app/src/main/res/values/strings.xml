@@ -4,4 +4,9 @@
     <string name="str_concentracion_max">concentracion_max</string>
     <string name="str_tasa_max">tasa_max</string>
     <string name="str_mode">mode</string>
+    <string name="str_ancho">ancho</string>
+    <string name="str_alto">alto</string>
+    <string name="str_largo">largo</string>
+    <string name="str_ocup">ocupantes</string>
+    <string name="str_ACHselec">ACH</string>
 </resources>

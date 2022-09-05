@@ -11,6 +11,8 @@
     <color name="color1">#F35C2C</color>
     <color name="color2">#FF9800</color>
     <color name="color3">#FFC107</color>
-    <color name="green">#129317</color>
+    <color name="green">#016D06</color>
     <color name="red">#DF2416</color>
+    <color name="azul">#304BDF</color>
+    <color name="azul2">#6D30DF</color>
 </resources>

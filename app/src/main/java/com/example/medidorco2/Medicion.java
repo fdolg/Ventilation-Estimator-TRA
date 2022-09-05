@@ -13,6 +13,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ProgressBar;
@@ -254,4 +255,13 @@ public class Medicion extends AppCompatActivity {
         super.onStop();
          countDownTimer.cancel(); // Se apaga el Timer
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) { // Método para controlar el bóton BACK
+        if (keyCode==event.KEYCODE_BACK){
+            Intent intentMenu = new Intent(getApplicationContext(), menu.class);
+            startActivity(intentMenu);
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 }

@@ -95,6 +95,7 @@ public class Vincular extends AppCompatActivity {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             String cadAux= dispositivos.get(i).toString();
             String [] cau2= cadAux.split("\n",2); // Se separa nombre y dirección MAC del dispositivo
+            usuario.BTdir=cau2[1];
 
             if (mode.equals("lectura")){
                 Intent intentconfigPar = new Intent(getApplicationContext(),configParametros.class);
@@ -103,7 +104,6 @@ public class Vincular extends AppCompatActivity {
             }
             if (mode.equals("estimador")){
                 Intent intentMedExt = new Intent(getApplicationContext(),MedicionCO2Ambiental.class);
-                intentMedExt.putExtra(getResources().getString(R.string.str_direccion_dispositivo),cau2[1]); // Se envío la dirección MAC al siguiente activity
                 startActivity(intentMedExt);
             }
 
